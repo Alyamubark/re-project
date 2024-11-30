@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+    font-family:'Times New Roman', Times, serif ; 
+    font-size:13px;
+
+}
+
+.GameBoard  {
+    background-color: rgb(187, 150, 221);
+    height:450px;
+    width: 500px ;
+    margin:auto;
+    display: grid;
+    border: 7px rgb(52, 3, 99);
+    border-radius: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7 , 60px);
+    grid-template-rows:repeat(6,60px) ;
+    gap: 2px;
+    margin: auto;
+}
+
+.cell {
+    display: flex;
+   width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+   
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color :white;
+   
+
+
+}
+
+.cell.filled-player1 .circle {
+    background-color: rgb(235, 86, 136); 
+}
+
+.cell.filled-player2 .circle {
+    background-color: yellow; 
+}
